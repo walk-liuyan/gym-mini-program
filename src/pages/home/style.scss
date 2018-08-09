@@ -1,0 +1,93 @@
+.p-home {
+  .tip {
+    padding: 21px 12px;
+    position: relative;
+    .tip__icon {
+      position: absolute;
+      z-index: 10;
+      left: 20px;
+      top: 0px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: white;
+      padding: 5px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .tip__cell {
+      position: relative;
+      padding: 20px 12px 12px;
+      background: #fff;
+      border-radius: 3px;
+      label{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        z-index: 11;
+        top: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+         a {
+          width: 15px;
+          height:2px;
+          background: #737373;
+          transform: rotate(45deg);
+        }
+        /* use cross as close button */
+        a::after{
+          content:'';
+          display:block;
+          width: 15px;
+          height:2px;
+          background: #737373;
+          transform: rotate(-90deg);
+        }
+      }
+
+      h1 {
+        font-size: 18px;
+        font-weight: bold;
+        color: rgb(89, 89, 89);
+        margin-bottom: 8px;
+      }
+      p {
+        font-size: 15px;
+        font-weight: 300;
+        color: rgb(89, 89, 89);
+        line-height: 19px;
+        margin-bottom: 12px;
+      }
+      span {
+        font-weight: bold;
+        font-size: 15px;
+        color: rgb(0, 204, 136);
+      }
+    }
+  }
+  .select {
+    padding: 0px 12px;
+    color: rgb(89, 89, 89);
+    .select__title {
+      font-size: 16px;
+      height: 30px;
+      line-height: 30px;
+      background: #f0f0f0;
+      position: sticky;
+      position: -webkit-sticky;
+      top: 0px;
+      z-index: 11;
+      span {
+        color: rgb(166, 166, 166);
+      }
+    }
+  }
+}
+
+page {
+  background: #f0f0f0;
+}
